@@ -1,0 +1,52 @@
+:root {
+  color-scheme: light dark;
+  --text: #1f2328;
+  --muted: #656d76;
+  --link: #0b63ce;
+  --bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6edf3;
+    --muted: #9198a1;
+    --link: #58a6ff;
+    --bg: #0d1117;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  line-height: 1.7;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 0.4em 0;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 1.8em 0 0.3em;
+}
+
+a {
+  color: var(--link);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+code {
+  font-size: 0.95em;
+}
